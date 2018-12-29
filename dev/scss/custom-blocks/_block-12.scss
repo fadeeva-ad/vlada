@@ -1,0 +1,57 @@
+@import '../blocks/variables';
+
+.block-12 {
+    margin-top: 80px;
+
+    &__title {
+        margin: 0;
+        font-weight: 500;
+        line-height: 31px;
+        font-size: 24px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background-image: url('data:image/svg+xml;utf8,<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="22.5" cy="22.5" r="17.5" stroke="#FFEFB9" stroke-width="10"/></svg>');
+            width: 45px;
+            height: 45px;
+            top: -20px;
+            left: -28px;
+            position: absolute;
+            display: block;
+            z-index: -1;
+        }
+    }
+
+    &__content {
+        margin-top: 40px;
+        display: flex;
+    }
+
+    &__gymnast {
+        margin-left: 40px;
+    }
+
+    &__list {
+        margin-left: 93px;
+    }
+
+    &__list-item {
+        margin-bottom: 13px;
+        line-height: 26px;
+        font-size: 18px;
+        max-width: 360px;
+        display: flex;
+
+        &:before {
+            content: '';
+            background-image: url('data:image/svg+xml;utf8,<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.5" cy="6.5" r="4.5" stroke="#FFE992" stroke-width="4"/></svg>');
+            min-width: 13px;
+            height: 13px;
+            display: inline-block;
+            position: relative;
+            top: 8px;
+            margin-right: 15px;
+        }
+    }
+}

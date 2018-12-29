@@ -1,0 +1,52 @@
+@import '../blocks/variables';
+
+.block-13 {
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    &__title {
+        position: relative;
+        display: inline-block;
+        line-height: normal;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 400;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            height: 15px;
+            width: 80%;
+            background-color: $yellow;
+            z-index: -1;
+        }
+    }
+
+    &__list {
+        margin-top: 40px;
+    }
+
+    &__list-item {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+    }
+
+    &__text {
+        font-weight: 300;
+        line-height: 26px;
+        font-size: 18px;
+        max-width: 483px;
+        margin-top: 56px;
+    }
+}

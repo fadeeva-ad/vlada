@@ -1,0 +1,53 @@
+@import 'variables';
+
+.bread-crumbs{
+
+    &__link{
+        text-decoration: none;
+        color: inherit;
+        transition: all ease-out 0.25s;
+
+        &:hover{
+            color: $purple;
+        }
+    }
+
+    .container{
+        max-width: 1048px;
+    }
+
+    &__path{
+        @include mobile{
+            margin-top: 29px;
+        }
+        
+        &-item{
+            font-size: 14px;
+            display: inline-block;
+            padding-right: 5px;
+            position: relative;
+            color: rgba(0, 0, 0, 0.35);
+
+            @include mobile{
+                font-size: 11px;
+            }
+
+            &:after{
+                content: '';
+                background-color: rgba(0, 0, 0, 0.35);
+                width: 1px;
+                height: 12px;
+                position: absolute;
+                top: 3px;
+                right: 0;
+            }
+
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import 'variables';
+
+.jump {
+    display: inline-block;
+
+    &:hover{
+        .jump{
+            &__title{
+                color: $soft-purple;
+            }
+
+            &__arrow path{
+                fill: $soft-purple;
+            }
+        }
+    }
+
+    &__title {
+        line-height: 50px;
+        font-size: 36px;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 400;
+        transition: all ease-out 0.25s;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 280px;
+            height: 15px;
+            bottom: 3px;
+            left: 0;
+            background-color: $yellow;
+            z-index: -1;
+        }
+    }
+
+    &__arrow {
+        width: 73px;
+        height: 34px;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -3px;
+
+        svg{
+            width: 51px;
+            height: auto;
+        }
+
+        path{
+            transition: all ease-out 0.25s;
+        }
+    }
+}

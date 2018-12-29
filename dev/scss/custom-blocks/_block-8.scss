@@ -1,0 +1,39 @@
+@import '../blocks/variables';
+
+.block-8 {
+    margin-top: 110px;
+
+    &__title {
+        max-width: 388px;
+        margin: auto;
+        margin-bottom: 50px;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $soft-purple;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 55px;
+            height: 2px;
+            position: absolute;
+            bottom: -21px;
+            left: 0;
+            background-color: $soft-purple;
+        }
+    }
+
+    &__img{
+        float: left;
+        margin-right: 58px;
+        margin-bottom: 0px;
+    }
+
+    &__text {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+}

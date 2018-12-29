@@ -1,0 +1,27 @@
+@import '../blocks/variables';
+
+.block-16 {
+    margin-top: 129px;
+    width: 100%;
+
+    &__title {
+        display: inline-block;
+        margin: 0;
+        line-height: normal;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .swiper-slide{
+        height: 304px;
+        background-size: cover;
+        background-position: center;
+    }
+}

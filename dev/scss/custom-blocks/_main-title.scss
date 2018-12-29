@@ -1,0 +1,35 @@
+@import '../blocks/variables';
+
+.main-title {
+    position: relative;
+    color: rgba(199, 153, 244, 0.18);
+    padding-right: 171px;
+
+    h1 {
+        margin: 0;
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 96px;
+        text-align: right;
+    }
+    
+    &__ellipse{
+        position: absolute;
+        top: -663px;
+        right: -228px;
+        z-index: -1;
+
+        @media (max-width: 1645px){
+            right: 0;
+        }
+
+        circle{
+            transition: all ease-out 0.3s;
+            fill: currentColor;
+        }
+    }
+
+    .bread-crumbs{
+        margin-top: 26px;
+    }
+}

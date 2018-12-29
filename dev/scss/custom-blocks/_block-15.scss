@@ -1,0 +1,51 @@
+@import '../blocks/variables';
+
+.block-15 {
+    margin-top: 105px;
+
+    &__title {
+        font-weight: 500;
+        line-height: normal;
+        font-size: 24px;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            height: 8px;
+            width: 60%;
+            background-color: $yellow;
+            z-index: -1;
+        }
+    }
+
+    &__content {
+        margin-top: 57px;
+        display: flex;
+    }
+
+    &__img {
+        min-width: 401px;
+        height: 331px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-left: 70px;
+    }
+
+    &__list-item {
+        margin-bottom: 30px;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}

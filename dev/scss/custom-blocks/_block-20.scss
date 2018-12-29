@@ -1,0 +1,23 @@
+@import '../blocks/variables';
+
+.block-20 {
+
+    &__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        color: $soft-purple;
+        position: relative;
+
+        &:after {
+            content: '';
+            background-image: url('data:image/svg+xml;utf8,<svg width="41" height="39" viewBox="0 0 41 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 19.5C36 27.2754 29.299 34 20.5 34C11.701 34 5 27.2754 5 19.5C5 11.7246 11.701 5 20.5 5C29.299 5 36 11.7246 36 19.5Z" stroke="#FFE992" stroke-width="10"/></svg>');
+            position: absolute;
+            width: 43px;
+            height: 41px;
+            top: -18px;
+            left: -20px;
+            z-index: -1;
+            background-size: cover;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import '../blocks/variables';
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 87px;
+    max-width: 596px;
+
+    &__title {
+        margin-top: 50px;
+        position: relative;
+
+        h2 {
+            font-weight: bold;
+            line-height: 28px;
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &:before {
+            content: '';
+            width: 380px;
+            height: 15px;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            background-color: $yellow;
+            z-index: -1;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        line-height: 21px;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        color: #595959;
+        margin-top: 10px;
+    }
+
+    &__scissors {
+        transform: rotate(-90deg);
+    }
+
+    &__btn {
+        background-color: lighten($purple, 10%);
+        margin-top: 41px;
+    }
+
+    &__inputs-wrapper{
+        margin-top: 48px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input{
+        width: 46%;
+    }
+}

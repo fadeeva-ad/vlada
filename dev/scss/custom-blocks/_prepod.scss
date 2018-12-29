@@ -1,0 +1,53 @@
+@import '../blocks/variables';
+
+.prepod {
+    display: flex;
+    background-color: $light-purple;
+    position: relative;
+
+    &__avatar {
+        width: 362.45px;
+        min-height: 288px;
+        max-height: 358px;
+        background-size: cover;
+        background-position: center;
+        align-self: stretch;
+    }
+
+    &__info {
+        flex: auto;
+        padding: 44px 50px;
+    }
+
+    &__title {
+        font-weight: 500;
+        line-height: normal;
+        font-size: 24px;
+        letter-spacing: 0.01em;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-weight: 200;
+        line-height: normal;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        text-transform: lowercase;
+        margin: 0;
+        margin-top: 8px;
+    }
+
+    &__text {
+        line-height: normal;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        margin-top: 15px;
+        max-width: 296px;
+    }
+
+    &__ellipse{
+        position: absolute;
+        right: -30px;
+        bottom: -40px;
+    }
+}

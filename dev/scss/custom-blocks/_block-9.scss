@@ -1,0 +1,49 @@
+@import '../blocks/variables';
+
+.block-9 {
+    display: block;
+    margin-top: 113px;
+
+    &:hover{
+        .block-9__arrow svg{
+            transform: translateX(10px);
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        position: relative;
+        line-height: 42px;
+        font-size: 36px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: calc(100% + 20px);
+            z-index: -1;
+            height: 16px;
+            background-color: #e5cefc;
+        }
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 137px;
+        height: 31px;
+        background-color: $light-purple;
+
+        svg {
+            width: 51px;
+            height: auto;
+            transition: all ease-out 0.25s;
+
+            path {
+                fill: white;
+            }
+        }
+    }
+}

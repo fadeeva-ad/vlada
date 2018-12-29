@@ -1,0 +1,75 @@
+@import 'variables';
+
+.footer {
+    background-color: $yellow;
+    padding: 33px 0;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: normal;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left{
+        padding-right: 15px;
+    }
+
+    &__logo-text {
+        margin-top: 13px;
+        color: #252525;
+    }
+
+    &__contacts {
+        margin-top: 20px;
+    }
+
+    &__contacts-item {
+        display: block;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 8px;
+    }
+
+    &__center{
+        width: 615px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column{
+        flex: auto;
+        padding-right: 20px;
+    }
+
+    &__subtitle{
+        margin: 0;
+        font-weight: normal;
+    }
+
+    &__list{
+        margin: 0;
+        margin-top: 13px;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list-item{
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    &__right{
+        text-align: right;
+    }
+
+    &__soc{
+        display: block;
+        margin-bottom: 38px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

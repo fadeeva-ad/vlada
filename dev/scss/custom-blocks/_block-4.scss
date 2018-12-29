@@ -1,0 +1,106 @@
+@import '../blocks/variables';
+
+.block-4 {
+    margin-top: 172px;
+    padding-left: 128px;
+
+    &__title {
+        margin: 0;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-left: 180px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__img {
+        min-width: 435px;
+        height: 228px;
+        position: relative;
+        align-self: flex-end;
+
+        &:after {
+            width: 122px;
+            content: '';
+            background-color: $yellow;
+            height: 16px;
+            position: absolute;
+            bottom: -16px;
+            right: 0;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 22px;
+        position: relative;
+        padding: 41px 40px 82px 0;
+    }
+
+    &__bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: calc(100% - 180px);
+        height: 100%;
+        z-index: -1;
+        background-color: $light-purple;
+    }
+
+    &__list {
+        &:after {
+            width: 16px;
+            content: '';
+            background-color: $yellow;
+            height: calc(100% + 80px);
+            position: absolute;
+            bottom: 170px;
+            left: 404px;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 88px;
+
+        &:last-child {
+            .block-4__img {
+                &:after {
+                    width: 496px;
+                }
+
+                &:before {
+                    width: 16px;
+                    content: "";
+                    background-color: #ffec9f;
+                    height: 706px;
+                    position: absolute;
+                    bottom: -706px;
+                    left: -61px;
+                }
+            }
+        }
+
+    }
+
+    &__text-wrapper {
+        margin-left: 58px;
+        max-width: 425px;
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        line-height: normal;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__text {
+        line-height: 18px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

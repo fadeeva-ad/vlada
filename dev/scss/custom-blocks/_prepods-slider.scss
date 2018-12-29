@@ -1,0 +1,25 @@
+@import '../blocks/variables';
+
+.prepods-slider {
+    margin-top: 114px;
+    flex: auto;
+
+    &__title {
+        margin: 0;
+        font-weight: normal;
+        font-size: 36px;
+        color: $soft-purple;
+        text-transform: uppercase;
+    }
+    
+    .swiper-container{
+        margin: 0;
+        flex:auto;
+    }
+
+    &__content{
+        display: flex;
+        width: 100%;
+        margin-top: 41px;
+    }
+}

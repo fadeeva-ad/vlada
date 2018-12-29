@@ -1,0 +1,72 @@
+@import 'variables';
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 88px;
+    pointer-events: none;
+
+    .container {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        pointer-events: visible;        
+    }
+
+    &__logo-text{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+
+    &__phone{
+        font-weight: 500;
+        line-height: normal;
+        font-size: 18px;
+        pointer-events: visible;        
+        text-align: right;
+    }
+
+}
+
+.flexMenu-viewMore {
+    display: inline-block;
+    margin-left: 25px;
+
+    &>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:hover {
+        & .flexMenu-popup {
+            display: block !important;
+        }
+    }
+}
+
+.flexMenu-viewMore>a:after {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    margin-left: 0.4em;
+    border-top: 0.4em solid gold;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    content: "";
+}
+
+.flexMenu-popup>li>a,
+.flexMenu-popup>li {
+    display: block;
+}

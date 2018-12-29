@@ -1,0 +1,61 @@
+@import '../blocks/variables';
+
+.block-6 {
+    display: flex;
+    align-items: flex-start;
+
+    @include container{
+        padding-right: 165px;
+    }
+
+    &.block-6_purple {
+        .block-6 {
+            &__title {
+                color: #FFFFFF;
+                opacity: 0.6;
+            }
+
+            &__ellipse{
+                width: 670px;
+            }
+        }
+    }
+
+    &__left {
+        margin-right: 47px;
+        margin-top: 188px;
+    }
+
+    &__right {
+        position: relative;
+
+        p {
+            font-weight: 300;
+            line-height: 26px;
+            font-size: 18px;
+            margin: 0;
+            margin-top: 27px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        width: 100%;
+        font-weight: 500;
+        margin-top: 45px;
+        font-size: 96px;
+        text-align: right;
+        color: $purple;
+
+        @include container{
+            font-size: 70px;
+        }
+    }
+
+    &__ellipse {
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+        right: -90px;
+    }
+}

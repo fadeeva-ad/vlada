@@ -1,0 +1,76 @@
+@import '../blocks/variables';
+
+.block-19 {
+    margin-top: 117px;
+
+
+    &__title {
+        font-weight: 900;
+        line-height: 23px;
+        font-size: 24px;
+        max-width: 758px;
+        text-align: center;
+        color: $soft-purple;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-top: 57px;
+    }
+
+    &__right {
+        margin-left: 93px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__subtitle {
+        font-weight: 900;
+        line-height: 31px;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    &__subtitle-color {
+        color: $soft-purple;
+    }
+
+    &__price {
+        margin-top: 23px;
+        text-align: center;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &_s {
+            text-transform: none;
+            margin-top: 7px;
+
+            & .block-19__price-big{
+                font-size: 1em;
+            }
+        }
+    }
+
+    &__price-big {
+        font-size: 1.4em;
+    }
+
+    &__btn{
+        background-color: $soft-purple;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 37px;
+        min-width: 304px;
+        padding: 10px 33px;
+
+        &:hover{
+            background-color: darken($soft-purple, 10%);
+
+        }
+    }
+}

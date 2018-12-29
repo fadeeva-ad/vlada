@@ -1,0 +1,77 @@
+@import "variables";
+
+.menu {
+    position: relative;
+
+
+    &__wrapper {
+        padding-top: 322px;
+        height: 100%;
+        align-self: stretch;
+        min-width: 200px;
+        max-width: 200px;
+        position: relative;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .link {
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $soft-purple;
+            }
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 14px;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 18px;
+        max-width: 170px;
+
+        &_active {
+            color: $soft-purple;
+        }
+
+
+    }
+
+    &__scissors {
+        position: absolute;
+        top: 50%;
+        left: -80px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    &__yellow-ellipse {
+        position: absolute;
+        top: 626px;
+        right: 73px;
+        z-index: -1;
+    }
+
+    &__sublist {
+        margin: 0;
+        padding: 10px 0 0px 10px;
+        list-style: none;
+
+        .menu__list-item {
+            line-height: 17px;
+            font-size: 13px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            max-width: 118px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

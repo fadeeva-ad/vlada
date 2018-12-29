@@ -1,0 +1,84 @@
+@import '../blocks/variables';
+
+.block-18 {
+    margin-top: 90px;
+
+    &__title {
+        margin: 0;
+        line-height: normal;
+        font-size: 36px;
+        text-align: right;
+        text-transform: uppercase;
+        color: $soft-purple;
+    }
+
+    &__list {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 49%;
+        margin-bottom: 117px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        border-radius: 50%;
+        min-width: 45%;
+        padding-bottom: 45%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    &__subtitle {
+        display: block;
+        line-height: 31px;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+
+        @include container {
+            font-size: 18px;
+            line-height: 25px;
+
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: -90px;
+            height: 8px;
+            width: 120px;
+            background-color: $yellow;
+            z-index: -1;
+
+            @include container{
+                top: 10px;
+            }
+        }
+    }
+
+    &__text-wrapper {
+        margin-left: 30px;
+
+        @include container {
+            margin-left: 20px;
+        }
+    }
+
+    &__cat {
+        margin-top: 15px;
+        color: rgba(97, 97, 97, 0.55);
+        font-weight: 400;
+        line-height: 18px;
+        font-size: 14px;
+        text-transform: uppercase;
+        display: block;
+    }
+}

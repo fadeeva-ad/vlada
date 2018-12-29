@@ -1,0 +1,16 @@
+@import '_variables';
+
+.input {
+   border-radius: 20px;
+   color: black;
+   border: 2px solid #000000;
+   height: 40px;
+   padding-left: 23px;
+   font-size: 16px;
+
+   &::placeholder {
+      font: 'Roboto'18px normal;
+      color: #616161;
+      opacity: 0.5;
+   }
+}
